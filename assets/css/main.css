@@ -1,0 +1,36 @@
+html{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: #8D74AB;
+}
+
+body{
+    padding: 0;
+    margin : 0;
+}
+
+h1, h2, p{
+    margin: 0;
+}
+
+article, header{
+    width: 100%;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction : column;   
+}
+
+.center-justify{
+    justify-content: center;
+}
+
+.center-align {
+    align-items: center;
+}
+
