@@ -33,3 +33,15 @@ article, header{
 .center-align {
     align-items: center;
 }
+
+.customize h1{
+    font-size: 4rem;
+}
+
+.customize-img, .customize-text{
+    width: 50%;
+}
+
+.customize-img img{
+height: 40%;
+}
