@@ -200,5 +200,14 @@
     filter: drop-shadow(1.5vw -1.8vw 0 #E2D5F8) drop-shadow(0 0 10px #bd9bf781);
 }
 
+.shadow-circle{
+    background-color: #e0ccf5e7;
+    width: 60%;
+    height: 8%;
+    filter: blur(30px);
+    margin-top: 10%;
+    border-radius: 100%;
+}
+
 
 
