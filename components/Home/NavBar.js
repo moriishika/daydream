@@ -22,6 +22,7 @@ template.innerHTML = `
         text-decoration : none;
         font-size:1.8rem;
         font-weight : 500;
+        opacity:0.6;
     }
 
     nav li a img{
