@@ -10,9 +10,9 @@ template.innerHTML = `
     nav {
        display : flex;
        justify-content : space-evenly;
-       flex-direction : row; 
        align-items : center;
        height : 15vh;
+       position: sticky;
     }
     nav li{
         list-style : none;
