@@ -32,7 +32,7 @@ template.innerHTML = `
 <nav>
     <li><a href="">Occasions</a></li>
     <li><a href="/views/flower/flowers.html">Flowers</a></li>
-    <li><a href="/views/index.html"><img src="/assets/images/logo.png"></img></a></li>
+    <li><a href="/views/index.html"><img src="../../assets/images/logo.png"></img></a></li>
     <li><a href="">Questions</a></li>
     <li><a href="">Contact</a></li>
 </nav>
