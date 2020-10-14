@@ -1,4 +1,4 @@
-import './NavBar.js';
+// import './NavBar.js';
 import './OccasionsBox/index.js';
 // navbar.disabled = true;
 // const shadowHost= document.createElement("div");

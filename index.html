@@ -14,16 +14,28 @@
     <link rel="stylesheet" media="" href="./assets/css/Home/home.css">
     
     <!-- mobile -->
-    <link rel="stylesheet" media="(max-width:320px)" href="./assets/css/Home/home-mobile.css">
+    <link rel="stylesheet" media="(min-width:320px )" href="./assets/css/Home/home-mobile.css">
 
     <!-- tablet -->
     <link rel="stylesheet" media="" href="./assets/css/Home/home-tablet.css">
-
+    
+    <!-- components -->
     <script defer src="./components/Home/index.js" type="module"></script>
+
+    <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>	
+
+    <script defer src="./assets/javascripts/index.js"></script>
   </head>
-  <body>
-    <nav-bar> </nav-bar>
+  <body class="trigger">
+    <nav id='navbar'>
+      <li><a href="">Occasions</a></li>
+      <li><a href="/views/flower/flowers.html">Flowers</a></li>
+      <li><a href="/views/index.html"><img src="../../assets/images/logo.png"></img></a></li>
+      <li><a href="">Questions</a></li>
+      <li><a href="">Contact</a></li>
+  </nav>
     <header class="intro flex">
       <section class="intro-title flex column center-align">
         <div>

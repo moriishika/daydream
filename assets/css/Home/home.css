@@ -217,6 +217,18 @@
   box-sizing: border-box;
 }
 
+.customize h1{
+  font-size: 4rem;
+}
+
+.customize-img, .customize-text{
+  width: 50%;
+}
+
+.customize-img img{
+height: 40%;
+}
+
 .customize-text,
 .customize-img {
   box-sizing: border-box;
@@ -243,6 +255,9 @@
 .customize-text h2 {
   font-weight: 500;
 }
+
+
+
 
 .customize-text p {
   display: inline-block;
