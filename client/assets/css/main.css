@@ -4,7 +4,7 @@ html{
     color: #8D74AB;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection { 
     color: black;
     background: rgb(253, 249, 249);
   }
