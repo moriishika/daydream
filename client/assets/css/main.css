@@ -4,6 +4,16 @@ html{
     color: #8D74AB;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: rgb(253, 249, 249);
+  }
+  
+  ::selection {
+    color: black;
+    background: white;
+  }
+
 body{
     padding: 0;
     margin : 0;

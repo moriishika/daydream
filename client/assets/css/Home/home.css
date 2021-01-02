@@ -197,7 +197,7 @@ review-item{
 
 .review-img {
   width: 30%;
-  height: 80%;
+  height: 100%;
 }
 
 .review-img a {
@@ -269,29 +269,24 @@ review-item{
   border-radius: 100%;
 }
 
-.customize div {
-  margin-top: 3%;
-  box-sizing: border-box;
+.customize-content{
+  margin-top: 5%;
+  height: 50%;
 }
 
 .customize h1 {
   font-size: 4rem;
-}
-
-
+} 
 
 .customize-img,
 .customize-text {
   width: 50%;
 }
 
-.customize-img img {
-  height: 40%;
-}
-
-.customize-text,
+.customize-text, 
 .customize-img {
   box-sizing: border-box;
+  height: 40%;
 }
 
 .customize-img {
@@ -299,10 +294,14 @@ review-item{
   justify-content: flex-end;
 }
 
+.customize-img {
+  height: 100%;
+}
+
 .customize-img img {
-  height: 34%;
+  height: 80%;
   border-radius: 29px;
-  /* filter: drop-shadow(-1.5vw -1.8vw 0 #f8e4ed) drop-shadow(0 0 10px #fadae9); */
+  filter: drop-shadow(-1.5vw -1.8vw 0 #f8e4ed) drop-shadow(0 0 10px #fadae9);
 }
 
 .customize-text {
@@ -364,6 +363,35 @@ review-item{
   transform: translateX(-150px);
 }
 
+/* .customize-content{
+  height: 50%;
+  width: 100%;
+}
+.customize-text,
+.customize-img{
+  width: 50%;
+}
+
+.customize-text{
+  height: 80%;
+}
+.customize-img{
+  height: 50%;
+}
+
+.customize-img img{
+  height: 80%;
+}
+
+.customize-text {
+  height: 50%;
+}
+
+.customize-text div{
+  margin-left: 5%;
+  margin-top:10%;
+  width: 100%;
+} */
 
 .shopsqna {
   height: 100vh;
@@ -388,10 +416,6 @@ review-item{
 
 .shops img:nth-child(3) {
   width: 6%;
-}
-
-.qna {
-  margin-top: 2%;
 }
 
 .qna h1 {
