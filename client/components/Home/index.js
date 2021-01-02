@@ -1,6 +1,7 @@
 // import './NavBar.js';
-import './animation.js';
 import './OccasionsBox/index.js';
+import './ReviewsBox/index.js'
+import './animation.js';
 // navbar.disabled = true;
 // const shadowHost= document.createElement("div");
 // const sebuahElement = document.createElement('span')

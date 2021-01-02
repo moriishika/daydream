@@ -79,13 +79,18 @@
   width: 100px;
 }
 
-.occasions-box,
+occasions-box,
 .reviews {
   width: 100%;
 }
 
-.occassions-box {
+occasions-box {
   height: 60%;
+}
+
+occasion-item{
+  width: 100%;
+  height: 100%;
 }
 
 .occasion {
@@ -158,9 +163,17 @@
   text-align: center;
 }
 
+reviews-box{
+  width: 100%;
+  height: 100%;
+}
+review-item{
+  width: 30%;
+}
+
 .review {
   background-color: #fef3ff;
-  width: 30%;
+  width: 100%;
   height: 100%;
   border-radius: 12px;
   filter: drop-shadow(0 3px 6px #faedfc);
@@ -184,7 +197,7 @@
 
 .review-img {
   width: 30%;
-  height: 100%;
+  height: 80%;
 }
 
 .review-img a {

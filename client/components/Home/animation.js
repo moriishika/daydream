@@ -70,11 +70,11 @@ gsap.fromTo([".daydream-reasons h1", ".reason"], fadeIn, {
 });
 
 gsap.fromTo(
-  [".occasion", ".occasion-texts h1", ".occasion-texts p", ".occasion-texts a"],
+  ["occasions-box", "occasions-box occasion-item .occasion-texts h1", " .occasion-texts p", " .occasion-texts a"],
   fadeIn,
   {
     scrollTrigger: {
-      trigger: ".occasion",
+      trigger: "occasions-box",
       start: "top center",
       end: "bottom center",
       markers: false,
@@ -85,7 +85,7 @@ gsap.fromTo(
   }
 );
 
-gsap.fromTo([".reviews-container h1", ".reviews-container div"], fadeIn, {
+gsap.fromTo([".reviews-container h1", "review-item", "review-item h2", "review-item p","review-item img"], fadeIn, {
   scrollTrigger: {
     trigger: ".reviews-container",
     start: "top center",
@@ -189,7 +189,7 @@ const sqnaTL = gsap.timeline({
     trigger: ".shopsqna",
     start: "15% center",
     end: "bottom center",
-    markers: true,
+    markers: false,
   }, 
   stagger:0.5
 })
