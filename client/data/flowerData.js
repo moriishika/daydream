@@ -4,21 +4,21 @@ const flowers = [
     title: "First Flower",
     desc:
       "Sintetics flower that can't get old or wilted  and always looks beautifuly amazing",
-    img: "/assets/images/1.jpg",
+    img: "/client/assets/images/1.jpg",
   },
   {
     id: 2,
     title: "Second Flower",
     desc:
       "Sintetics flower that can't get old or wilted  and always looks beautifuly amazing",
-    img: "/assets/images/2.jpg",
+    img: "/client/assets/images/2.jpg",
   },
   {
     id: 3,
     title: "Third Flower",
     desc:
       "Sintetics flower that can't get old or wilted  and always looks beautifuly amazing",
-    img: "/assets/images/3.jpg",
+    img: "/client/assets/images/3.jpg",
   },
 ];
 
