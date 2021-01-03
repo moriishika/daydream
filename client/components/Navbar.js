@@ -4,8 +4,8 @@ customElements.define('nav-bar', class Navbar extends HTMLElement {
         this.innerHTML = `
         <nav id='navbar'>
             <li><a href="">Occasions</a></li>
-            <li><a href="${this.relativePath()}/client/views/flower/flowers.html">Flowers</a></li>
-            <li><a href="${this.relativePath()}/client/index.html"><img src="${this.relativePath()}/client/assets/images/logo.png"></img></a></li>
+            <li><a href="/client/views/flower/flowers.html">Flowers</a></li>
+            <li><a href="/client/index.html"><img src="/client/assets/images/logo.png"></img></a></li>
             <li><a href="">Questions</a></li>
             <li><a href="">Contact</a></li>
         </nav>
@@ -29,18 +29,10 @@ customElements.define('nav-bar', class Navbar extends HTMLElement {
         });
     }
 
-    relativePath() {
-            if (window.location.pathname.includes('/daydream/')) {
-                return `${window.location.host}/daydream`
-            } else {
-                return '';
-            }
-    }
-
-    connectedCallback() {
-        if (this.getAttribute('autoHide')) {
+    connectedCallback(){
+        if(this.getAttribute('autoHide')){
             this.onScrolling();
-        } else {
+        }else{
             return;
         }
     }
