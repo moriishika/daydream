@@ -5,7 +5,7 @@ customElements.define('nav-bar', class Navbar extends HTMLElement {
         <nav id='navbar'>
             <li><a href="">Occasions</a></li>
             <li><a href="${this.relativePath()}/client/views/flower/flowers.html">Flowers</a></li>
-            <li><a href="${this.relativePath()}/client/index.html"><img src="${this.relativePath()}/assets/images/logo.png"></img></a></li>
+            <li><a href="${this.relativePath()}/client/index.html"><img src="${this.relativePath()}/client/assets/images/logo.png"></img></a></li>
             <li><a href="">Questions</a></li>
             <li><a href="">Contact</a></li>
         </nav>
