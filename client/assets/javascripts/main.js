@@ -1,4 +1,6 @@
 import '../../components/Navbar.js'
+import '../../components/SearchMenu.js'
+import '../../components/ProgressBar.js'
 window.onscroll = function () { onScrolling() };
 function onScrolling() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;

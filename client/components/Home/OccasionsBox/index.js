@@ -3,7 +3,7 @@ import "./OccasionsItem.js"
 const occasionBox = document.querySelector('occasions-box')
 console.log(occasionBox)
 const dummy = [{
-    img: './assets/images/3.jpg',
+    img: '../../assets/images/3.jpg',
     title: 'Wedding',
     link: '#',
     desc: `Give the best moment for your wedding with our 

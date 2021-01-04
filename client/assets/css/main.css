@@ -54,7 +54,7 @@ article, header{
     z-index: 999;
   }
 
-nav {
+.navbar {
     display : flex;
     justify-content : space-evenly;
     align-items : center;
@@ -65,17 +65,17 @@ nav {
     z-index: 9999;
     transition: 1s;
  }
- nav li{
+.navbar li{
      list-style : none;
  }
 
- nav li a {
+.navbar li a {
      text-decoration : none;
      font-size:1.8rem;
      font-weight : 500;
      opacity:0.6;
  }
 
- nav li a img{
+.navbar li a img{
      height : 15vh;
  }
