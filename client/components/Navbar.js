@@ -15,7 +15,7 @@ customElements.define('nav-bar', class Navbar extends HTMLElement {
     activeAutoHide() {
         let navbar = document.querySelector('#navbar');
         ScrollTrigger.addEventListener("scrollStart", () => {
-            navbar.style.top = "-25vh";
+            navbar.style.top = "-19vh";
             navbar.style.boxShadow = "0px 3px 20px #af71df38";
         });
 
