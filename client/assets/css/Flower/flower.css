@@ -1,0 +1,13 @@
+flower-list {
+    flex-flow : row wrap;
+}
+
+.flower-item{
+    margin: 3vw 0 0  3.7vw;
+    width: 20vw;
+  }
+
+  .flower-item img{
+    width:100%;
+  }
+  

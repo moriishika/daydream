@@ -1,6 +1,9 @@
 import "./FlowerItem.js";
 
 customElements.define("flower-list", class FlowerContainer extends HTMLElement {
+  constructor(){
+    super();
+  }
     set flowers(value) {
       this._flowers = value;
       this.render();
