@@ -10,4 +10,19 @@ flower-list {
   .flower-item img{
     width:100%;
   }
-  
+
+.flower-item button {
+  border: 1px solid #9871c7;
+  background-color: transparent;
+  color: #8D74AB;
+  font-size: 20px;
+  margin-top: 5%;
+  width: 100%;
+  transition: 0.4s;
+  font-weight: bold;
+}
+
+.flower-item button:hover {
+  background-color: #d8c5ee;
+  color: white;
+}

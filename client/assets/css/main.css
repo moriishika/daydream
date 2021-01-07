@@ -1,5 +1,7 @@
-html{
+*{
     font-family: 'Cormorant Garamond', serif;
+}
+html{
     font-size: 20px;
     color: #8D74AB;
     height: 100%;
