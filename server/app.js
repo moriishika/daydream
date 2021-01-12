@@ -4,10 +4,11 @@ const express = require('express');
 const logger = require('morgan');
 const { Pool } = require('pg');
 const path = require('path')
+const cors = require('cors');
 const pool = new Pool({
   user : 'postgres',
   host : 'localhost',
-  database : 'pms',
+  database : 'daydream',
   password : 'lala123',
   port : 5432
 })
@@ -16,6 +17,8 @@ const indexRouter = require('./routes/index')(pool);
 const flowersRouter = require('./routes/flowers')(pool);
 
 const app = express();
+
+app.use(cors())
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
