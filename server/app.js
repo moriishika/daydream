@@ -7,18 +7,13 @@ const path = require('path')
 const pool = new Pool({
   user : 'postgres',
   host : 'localhost',
-  database : 'daydream',
+  database : 'pms',
   password : 'lala123',
   port : 5432
 })
 
-// pool.query('select * from users', (err, result)=>{
-// if(err) return console.error(err);
-// console.log(result.rows)
-// })
-
 const indexRouter = require('./routes/index')(pool);
-const usersRouter = require('./routes/users');
+const flowersRouter = require('./routes/flowers')(pool);
 
 const app = express();
 
@@ -37,7 +32,7 @@ app.use(function (req, res, next) {
 });
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/flowers', flowersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
