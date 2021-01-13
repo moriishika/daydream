@@ -5,6 +5,7 @@ const logger = require('morgan');
 const { Pool } = require('pg');
 const path = require('path')
 const cors = require('cors');
+const bodyParser = require('body-parser')
 const pool = new Pool({
   user : 'postgres',
   host : 'localhost',
@@ -15,6 +16,7 @@ const pool = new Pool({
 
 const indexRouter = require('./routes/index')(pool);
 const flowersRouter = require('./routes/flowers')(pool);
+// const reviewsRouter = require('./routes/flowers')(pool);
 
 const app = express();
 
@@ -29,13 +31,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(function (req, res, next) {
-  res.set('Cache-Control', 'no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0');
-  next();
-});
+app.use(function (req, res) {
+  res.setHeader('Content-Type', 'text/plain')
+  res.end(JSON.stringify(req.body, null, 2))
+})
 
 app.use('/', indexRouter);
 app.use('/flowers', flowersRouter);
+// app.use('/reviews', )
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,12 +1,4 @@
-const bodyParser = require('body-parser')
-const express = require('express');
-const router = express.Router();        
-
-router.use(bodyParser.urlencoded({
-  extended: false
-}));
-router.use(bodyParser.json());
-
+const router = require('express').Router();        
 
 /* GET home page. */
 module.exports = (pool) =>{
