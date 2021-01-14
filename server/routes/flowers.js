@@ -3,8 +3,10 @@ const router = require('express').Router();
 module.exports = (pool) => {
   router.get('/', (req, res ,next)=> {
     const query = `SELECT * FROM flowers`;
+    console.log('asuk router')
     pool.query(query, (err, flowers)=>{
         if(err) return console.error(err);
+        console.log("masukkk")
         res.status(200).json(flowers.rows);
     })
   })
@@ -21,7 +23,7 @@ module.exports = (pool) => {
       review_total,
       sold_total
     } = req.body;
-
+    console.log(name)
     const body = [name, description, price, stock, images, review_total, sold_total];
     pool.query(query, body, (err, data) => {
       if(err) {
@@ -29,7 +31,7 @@ module.exports = (pool) => {
         return console.error(err)
       };
       console.log('a')
-      res.status(200).json(data)
+      res.status(200).json(req.body)
       console.log('b')
     })
   })
