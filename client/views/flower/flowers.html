@@ -35,5 +35,57 @@
     <progress-bar></progress-bar>
     <flower-list class="flex"></flower-list>
     <pagination-tag class="flex center-justify center-align"></pagination-tag>
+    <form id='coba' enctype="multipart/form-data">
+        <input type="text" name="name" id="name">
+        <input type="file" name="images" id="file" multiple>
+        <button type="submit" id="post">submit</button>
+    </form>
+
+    <script>
+     const button = document.getElementById('coba');
+
+     const getData = (el) => {
+         console.log(document.querySelector(el))
+        return document.querySelector(el).value;
+     }
+
+    //  const getFiles = (el) => {
+    //      console.log("halo")
+    //     const fileInput = document.querySelector(el);
+    //     console.log(fileInput)
+    //     for(let i = 0; i < fileInput.files.length ; i++){
+    //         var file = fileInput.files[i]
+    //         console.log(file)
+    //         const fileReader = new FileReader();
+    //         fileReader.addEventListener("load", function(event) {
+    //       var picFile = event.target;
+    //       console.log(picFile.name)
+    //     });
+    //         fileReader.readAsDataURL(file)
+    //     }
+    // }
+    button.addEventListener('submit', el => {
+         el.preventDefault()
+    //  const data = {
+    //      name : getData("#name"),
+    //      images:getData('#file')
+    //  }
+
+    const  formData = new FormData();
+    formData.append('name', document.querySelector('#name').value)
+    formData.append('images', document.querySelector('#file').files[0]);
+         fetch('http://localhost:3000/flowers', {
+            method : 'POST',
+            body : formData
+         })
+         .then(response => console.log(response.body))
+         .then(result => {
+            console.log('Success:', result);
+            })
+         .catch(error => {
+            console.error('Error:', error);
+        });;
+     })
+    </script>
 </body>
 </html>

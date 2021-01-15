@@ -19,13 +19,13 @@ customElements.define("flower-item", class FlowerItem extends HTMLElement {
   // }
 
   render(){
-    const {name} = this._flower;
+    const {name, images, description} = this._flower;
     this.innerHTML = `
     <div class=" flower-item">
-        <img src="" alt="">
+        <img src="${images[0]}" alt="">
         <div>
           <h1>${name}</h1>
-          <p></p>
+          <p>${description}</p>
         </div>
         <button>Let's Take A Look</button>
     </div>`

@@ -4,6 +4,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 const {Pool} = require('pg');
+var fileUpload = require('express-fileupload')
+var cors = require('cors')
 const pool = new Pool({
   user : 'postgres',
   host : 'localhost',
@@ -13,7 +15,8 @@ const pool = new Pool({
 })
 
 var app = express();
-
+app.use(cors())
+app.use(fileUpload())
 app.use(logger('dev'));
 // parse application/json, basically parse incoming Request Object as a JSON Object 
 app.use(bodyParser.json());

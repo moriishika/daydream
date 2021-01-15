@@ -6,8 +6,11 @@ customElements.define("flower-list", class FlowerContainer extends HTMLElement {
 
   connectedCallback() {
     fetch('http://localhost:3000/flowers')
-  .then(response => response.json())
-  .then(data => this.flowers = data);
+    .then(response => response.json())
+    .then(data => this.flowers = data)
+    .catch(err => {
+      console.log(err)
+    })
   }
 
   set flowers(value) {
