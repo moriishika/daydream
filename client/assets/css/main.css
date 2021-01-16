@@ -107,4 +107,9 @@ article, header{
     font-family: serif;
     box-sizing: border-box;
     box-shadow: 0 0 3px #d6c5e9;
+    transition: 0.5s;
+ }
+
+ pagination-tag div a:hover{
+    background-color: #cbaeee;
  }
