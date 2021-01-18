@@ -78,6 +78,13 @@ article, header{
      font-size:1.8rem;
      font-weight : 500;
      opacity:0.6;
+     transition: 0.5s;
+ }
+
+ .navbar li a:hover {
+    color : #6d4e96;
+    opacity:1;
+    text-decoration: underline;
  }
 
 .navbar li a img{
